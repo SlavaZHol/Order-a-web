@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Формы</title>
+<style>
+
+/* 	внутренние отступы в ячейках составляют 8px;
+	ширина элемента textarea составляет 97%;
+	запретить пользователю изменять размеры текстовой области (элемент textarea) */
+	
+
+	
+/* Таблица*/
+table {
+	
+		/* Размеры таблицы: ширина 300px, высота 200px. */
+		width: 300px;
+		height: 200px;
+		
+		/*Расстояние мужду ячейками*/
+		border-spacing: 0px; 
+		
+		/*конутр таблицы*/
+		border: 1px solid #090;
+		
+		color: #000;
+						
+		margin-right: left;
+		margin-left: left;
+		}
+	
+/*Заголовок таблицы	*/	
+caption {
+		font: 1.5em Arial, sans-serif;
+		padding: 8px;
+			}	
+		
+td, th {
+     		/*Рисуем для каждой ячейки свою рамку*/
+			border: 1px solid #090;
+			
+			/*Отодвигаю содержимое ячейки от границы ячейки с помщью внутреннего отступа: top -right - bottom -left */
+			padding: 8px;   /* 	внутренние отступы в ячейках составляют 8px; */
+			
+			/*Задаём шрифт*/
+			font: 0.8em Arial, sans-serif;
+			
+			/*Положение текста в ячейках */
+			text-align: left;
+			vertical-align: center;
+			
+			/*Цвет текста*/
+			color: #000000 !important;
+			}
+
+label {
+ 			display: block;
+ 			margin-bottom: 0px;
+  			}
+
+			/* Ширина элемента textarea составляет 97%;
+			запретить пользователю изменять размеры текстовой области (элемент textarea). */
+textarea  {
+			width: 97%;
+			height: 70px;
+			resize: none;
+			}
+
+input.btn {
+			/* margin-left: calc(60% + 4px); !important;*/
+			float: right;
+			cursor: pointer; /* курсор-лапка*/
+			}
+	
+</style>
+</head>
+
+<body>
+
+<form>
+
+<table>
+
+<caption>Закажите сайт</caption>
+	
+	<tr><!-- строка -->
+		<td>Ваше имя
+		<td><input maxlength='12' placeholder='пожалуйста, введите имя...' name='user_name' type='text'>
+	</tr>
+	
+	<tr><!-- строка -->
+		<td>Ваш e-mail
+		<td><input maxlength='12' placeholder='электронная почта...' name='user_email type='text'>
+	</tr>
+	
+	<tr><!-- строка -->
+		<td>Кол-во страниц 
+		<td>
+			<select name='hello'>
+				<option value='1'>&lt;5</option>
+				<option value='2'>5-10</option>
+				<option value='3'>&gt;10</option>
+			</select>
+	</tr>
+	
+	<tr><!-- строка -->
+		<td style="vertical-align:left"; colspan='2'>
+		<fieldset>
+			<legend>Версия языка HTML</legend>
+			<input type='radio' name='HTML' checked>HTML 5<br>
+			<input type='radio' name='HTML'>HTML 4.01<br>
+			<input type='radio' name='HTML'>XHTML 1.1
+		</fieldset>
+	</tr>
+	
+		<tr><!-- строка -->
+		<td  colspan='2'>
+		<fieldset>
+			<legend>Дополнительные параметры</legend>
+			<input  type='checkbox' name='opt1' checked>Слайд шоу<br>
+			<input  type='checkbox' name='opt2' checked>Мобильная версия<br>
+			<input  type='checkbox' name='opt3' >Версия для печати<br>
+			
+		</fieldset>
+	</tr>
+	
+	<tr><!-- строка -->
+		<td  colspan='2'>
+		<fieldset>
+			<legend>Дополнительные параметры</legend>
+			<input  type='checkbox' name='opt1' checked>Слайд шоу<br>
+			<input  type='checkbox' name='opt2' checked>Мобильная версия<br>
+			<input  type='checkbox' name='opt3' >Версия для печати<br>			
+		</fieldset>
+	</tr>
+	
+	<tr><!-- строка -->
+		<td  colspan='2'><label>Комментарии</label><br>
+		<!-- текстовая область (правильно сразу закрывать на одной строке)-->
+	<textarea readonly></textarea>
+	</tr>
+	<tr><!-- строка -->
+		<td  colspan='2'>
+		<!-- отправка данных -->	
+		<input class='btn order' type='submit' value='Сделать заказ'>
+	</tr>
+	
+</table>
+
+
+</form>
+
+<hr>
+		<blockquote cite='https://www.svyaznoy.ru/catalog/phone/224/3249677/specs'>
+		<table>
+			<caption><a href='https://www.svyaznoy.ru/catalog/phone/224/3249677/specs' target='_blank'>Дисплей</caption>
+			<tr>
+				<td>Тип дисплея :
+				<td><center>1920x1080<br>(Full HD)</center>
+			</tr>
+			<tr>
+				<td>Разрешение дисплея (пикс):
+				<td>IPS
+			</tr>
+			<tr>
+				<td>Плотность пикселей (PPI):
+				<td>424
+			</tr>
+			<tr>
+				<td>Количество цветов дисплея :
+				<td>16 млн.
+			</tr>
+			
+		</table>
+ 
+
+
+
+
+
+		</blockquote>
+<hr>
+
+</body>
+</html>
